@@ -1,49 +1,37 @@
 package com.victorfernandesneto.myanimelistrandomizer.main;
 
-import java.security.SecureRandom;
-import java.util.Base64;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+import com.victorfernandesneto.myanimelistrandomizer.request.RequestAnimeList;
+import com.victorfernandesneto.myanimelistrandomizer.util.ParseJson;
+import com.victorfernandesneto.myanimelistrandomizer.util.ValidateJson;
+
+import java.io.IOException;
+import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
-        Locale currentLocale = Locale.getDefault();
-        ResourceBundle bundle;
-        try {
-            bundle = ResourceBundle.getBundle("config", currentLocale);
-        } catch (Exception e) {
-            System.err.println("Error loading configuration file: " + e.getMessage());
-            return;
+    public static void main(String[] args) throws IOException, InterruptedException {
+        Gson gson = new Gson();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Your username -> ");
+        var username = sc.next();
+
+        boolean validJson = false;
+        String nodeJson = null;
+        String json = null;
+        while (!validJson) {
+            json = RequestAnimeList.getRandomAnime(username).body();
+            try {
+                validJson = ValidateJson.validateJson(json);
+            } catch (JsonSyntaxException e) {
+                System.err.println("Error: Invalid JSON received. Trying again...");
+            } catch (Exception e) { // Handle other potential exceptions
+                e.printStackTrace();
+                System.err.println("An unexpected error occurred. Trying again...");
+            }
         }
 
-        String apiUrlAuth = bundle.getString("api.url.auth");
-        String codeVerifier = generateCodeVerifier();
-        String codeChallenge;
-        String requestUrlAuth;
-        try {
-            codeChallenge = generateCodeChallenge(codeVerifier);
-            requestUrlAuth = (apiUrlAuth + codeChallenge);
-            requestUrlAuth = requestUrlAuth.substring(0, requestUrlAuth.length()-1); // Taking away the '=' at the end.
-            System.out.println(requestUrlAuth);
-        } catch (Exception e) {
-            System.err.println("Error generating code challenge: " + e.getMessage());
-            // Handle the error appropriately (e.g., exit the program)
-        }
-    }
-
-    public static String generateCodeVerifier() {
-        byte[] randomBytes = new byte[32]; // Adjust size for desired security level
-        new SecureRandom().nextBytes(randomBytes);
-        return Base64.getUrlEncoder().encodeToString(randomBytes);
-    }
-
-    public static String generateCodeChallenge(String codeVerifier) throws Exception {
-        String secret = "HmacSHA256"; // Use standard algorithm name
-        Mac sha256HMAC = Mac.getInstance(secret);
-        sha256HMAC.init(new SecretKeySpec(codeVerifier.getBytes("UTF-8"), secret));
-        byte[] hash = sha256HMAC.doFinal();
-        return Base64.getUrlEncoder().encodeToString(hash);
+        nodeJson = ParseJson.parseJson(json);
+        System.out.println(nodeJson);
     }
 }
