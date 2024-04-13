@@ -10,8 +10,7 @@ public class ApiQuery {
         Random rand = new Random();
         int randomNumber = rand.nextInt(1000);
         this.username = username;
-        this.url = "https://api.myanimelist.net/v2/users/{username}/animelist?limit=1&offset={offset}"
-                .replace("{username}", this.username)
+        this.url = "https://api.myanimelist.net/v2/users/" + this.username + "/animelist?limit=1&offset={offset}"
                 .replace("{offset}", String.valueOf(randomNumber));
     }
 
