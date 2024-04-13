@@ -7,7 +7,6 @@
 - Create a folder inside `src/main` called `resources` that should contain: 
 
 ```
-api.url=https://api.myanimelist.net/v2/users/{username}/animelist?limit=1&offset={offset}
 client.id=YOUR_CLIENT_ID
 ```
 
