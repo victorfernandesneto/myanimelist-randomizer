@@ -12,7 +12,6 @@ public class ValidateJson {
         Map<String, Object> responseMap = gson.fromJson(json, Map.class);
 
         List<Map<String, Object>> dataList = (List<Map<String, Object>>) responseMap.get("data");
-        if (!dataList.isEmpty()) return true;
-        else return false;
+        return !dataList.isEmpty();
     }
 }

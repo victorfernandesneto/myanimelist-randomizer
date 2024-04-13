@@ -1,6 +1,5 @@
 package com.victorfernandesneto.myanimelistrandomizer.main;
 
-import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.victorfernandesneto.myanimelistrandomizer.request.RequestAnimeList;
 import com.victorfernandesneto.myanimelistrandomizer.util.ParseJson;
@@ -11,13 +10,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Gson gson = new Gson();
         Scanner sc = new Scanner(System.in);
         System.out.print("Your username -> ");
         var username = sc.next();
 
         boolean validJson = false;
-        String nodeJson = null;
+        String nodeJson;
         String json = null;
         while (!validJson) {
             json = RequestAnimeList.getRandomAnime(username).body();
@@ -30,7 +28,6 @@ public class App {
                 System.err.println("An unexpected error occurred. Trying again...");
             }
         }
-
         nodeJson = ParseJson.parseJson(json);
         System.out.println(nodeJson);
     }
