@@ -11,8 +11,7 @@ import java.net.http.HttpResponse;
 
 
 public class RequestAnimeList {
-    public static HttpResponse<String> getRandomAnime(String username) throws IOException, InterruptedException {
-        ApiQuery query = new ApiQuery(username);
+    public static HttpResponse<String> getRandomAnime(ApiQuery query) throws IOException, InterruptedException {
         String apiURL = query.toString();
         String clientId = CallResource.getResource("client.id");
 
