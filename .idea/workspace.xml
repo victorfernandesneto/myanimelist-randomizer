@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" afterDir="false" />
+    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="refactored code to better separate methods in their respective classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ValidateJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ValidateData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713101330121</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactored code to better separate methods in their respective classes">
+      <option name="closed" value="true" />
+      <created>1713103611709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713103611709</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +163,7 @@
     <MESSAGE value="created class ApiQuery to handle the url" />
     <MESSAGE value="refactored apiquery class" />
     <MESSAGE value="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number" />
+    <MESSAGE value="refactored code to better separate methods in their respective classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored code to better separate methods in their respective classes" />
   </component>
 </project>
