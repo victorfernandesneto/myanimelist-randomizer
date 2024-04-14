@@ -2,12 +2,14 @@ package com.victorfernandesneto.myanimelistrandomizer.main;
 
 import com.google.gson.JsonSyntaxException;
 import com.victorfernandesneto.myanimelistrandomizer.models.ApiQuery;
+import com.victorfernandesneto.myanimelistrandomizer.models.Anime;
 import com.victorfernandesneto.myanimelistrandomizer.request.RequestAnimeList;
-import com.victorfernandesneto.myanimelistrandomizer.util.ParseJson;
-import com.victorfernandesneto.myanimelistrandomizer.util.RandomizeNumber;
-import com.victorfernandesneto.myanimelistrandomizer.util.ValidateJson;
+import com.victorfernandesneto.myanimelistrandomizer.util.*;
+
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class App {
@@ -17,17 +19,20 @@ public class App {
         var username = sc.next();
 
         boolean validJson = false;
-        String nodeJson;
-        String json = null;
+        String json;
+        String requestBody;
         int ceil = 1000;
-        int randomNumber = 0;
+        int randomNumber;
+        List<Map<String, Object>> dataList = List.of();
+
         while (!validJson) {
             randomNumber = RandomizeNumber.randomizeNumber(ceil);
             ceil = randomNumber;
             ApiQuery query = new ApiQuery(username, randomNumber);
-            json = RequestAnimeList.getRandomAnime(query).body();
+            requestBody = RequestAnimeList.getRandomAnime(query).body();
+            dataList = ExtractData.extractData(requestBody);
             try {
-                validJson = ValidateJson.validateJson(json);
+                validJson = ValidateData.validateData(dataList);
             } catch (JsonSyntaxException e) {
                 System.err.println("Error: Invalid JSON received. Trying again...");
             } catch (Exception e) { // Handle other potential exceptions
@@ -35,7 +40,8 @@ public class App {
                 System.err.println("An unexpected error occurred. Trying again...");
             }
         }
-        nodeJson = ParseJson.parseJson(json);
-        System.out.println(nodeJson);
+        Anime animeClass = ExtractNode.extractNode(dataList);
+        json = ParseJson.parseJson(animeClass);
+        System.out.println(json);
     }
 }
