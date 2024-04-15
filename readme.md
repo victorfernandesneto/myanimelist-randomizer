@@ -16,7 +16,7 @@ client.id=YOUR_CLIENT_ID
 
 ### Future improvements
 
-I want to add filters to watching, watched, dropped, plan to watch so the user can have a more complete experience.
+I'm planning on "upgrading" this project to a Spring Web service.
 
 
 ### Contact
