@@ -11,7 +11,6 @@ public class ExtractNode {
         Map<String, Object> animeMap = dataList.get(0);
 
         Map<String, Object> node = (Map<String, Object>) animeMap.get("node");
-        System.out.println(node);
         Double d = (double) node.get("id");
         int id = d.intValue();
         String title = (String) node.get("title");

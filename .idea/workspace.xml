@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="refactored code to better separate methods in their respective classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" afterDir="false" />
+    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="changed code to handle private profile">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713103611709</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed code to handle private profile">
+      <option name="closed" value="true" />
+      <created>1713199327887</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713199327887</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +169,17 @@
     <MESSAGE value="refactored apiquery class" />
     <MESSAGE value="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number" />
     <MESSAGE value="refactored code to better separate methods in their respective classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored code to better separate methods in their respective classes" />
+    <MESSAGE value="changed code to handle private profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed code to handle private profile" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
