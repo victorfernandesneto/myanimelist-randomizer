@@ -22,12 +22,17 @@ public class App {
         String json;
         String requestBody;
         int ceil = 1000;
-        int randomNumber;
+        int randomNumber = 0;
         List<Map<String, Object>> dataList = List.of();
 
         while (!validJson) {
-            randomNumber = RandomizeNumber.randomizeNumber(ceil);
-            ceil = randomNumber;
+            try {
+                randomNumber = RandomizeNumber.randomizeNumber(ceil);
+                ceil = randomNumber;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Anime list is empty or profile is set to private. Please add an anime or make your profile public again.");
+                break;
+            }
             ApiQuery query = new ApiQuery(username, randomNumber);
             requestBody = RequestAnimeList.getRandomAnime(query).body();
             dataList = ExtractData.extractData(requestBody);
