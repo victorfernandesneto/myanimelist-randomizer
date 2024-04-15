@@ -1,6 +1,4 @@
-package com.victorfernandesneto.myanimelistrandomizer.models;
-
-import java.util.Random;
+package com.victorfernandesneto.myanimelistrandomizer.model;
 
 public class ApiQuery {
     private String username;

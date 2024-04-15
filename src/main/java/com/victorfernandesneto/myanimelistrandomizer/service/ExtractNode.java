@@ -1,6 +1,6 @@
-package com.victorfernandesneto.myanimelistrandomizer.util;
+package com.victorfernandesneto.myanimelistrandomizer.service;
 
-import com.victorfernandesneto.myanimelistrandomizer.models.Anime;
+import com.victorfernandesneto.myanimelistrandomizer.model.Anime;
 
 import java.util.HashMap;
 import java.util.List;
@@ -11,6 +11,7 @@ public class ExtractNode {
         Map<String, Object> animeMap = dataList.get(0);
 
         Map<String, Object> node = (Map<String, Object>) animeMap.get("node");
+        // returning this would be fine, but I want the JSON response to be organized
         Double d = (double) node.get("id");
         int id = d.intValue();
         String title = (String) node.get("title");

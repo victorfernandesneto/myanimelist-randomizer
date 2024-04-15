@@ -1,4 +1,4 @@
-package com.victorfernandesneto.myanimelistrandomizer.util;
+package com.victorfernandesneto.myanimelistrandomizer.service;
 
 import java.util.List;
 import java.util.Map;

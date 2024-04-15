@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="deleted unfiltered sout">
+    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="deleted lib folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gson-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/Anime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/ApiQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/request/RequestAnimeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/request/RequestAnimeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713199615978</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="deleted lib folder">
+      <option name="closed" value="true" />
+      <created>1713222737802</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713222737802</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +202,8 @@
     <MESSAGE value="refactored code to better separate methods in their respective classes" />
     <MESSAGE value="changed code to handle private profile" />
     <MESSAGE value="deleted unfiltered sout" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted unfiltered sout" />
+    <MESSAGE value="deleted lib folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted lib folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

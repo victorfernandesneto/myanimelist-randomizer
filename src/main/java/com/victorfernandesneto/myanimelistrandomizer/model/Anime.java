@@ -1,4 +1,4 @@
-package com.victorfernandesneto.myanimelistrandomizer.models;
+package com.victorfernandesneto.myanimelistrandomizer.model;
 
 import java.util.Map;
 

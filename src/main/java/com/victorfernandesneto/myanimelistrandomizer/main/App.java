@@ -1,10 +1,10 @@
 package com.victorfernandesneto.myanimelistrandomizer.main;
 
 import com.google.gson.JsonSyntaxException;
-import com.victorfernandesneto.myanimelistrandomizer.models.ApiQuery;
-import com.victorfernandesneto.myanimelistrandomizer.models.Anime;
-import com.victorfernandesneto.myanimelistrandomizer.request.RequestAnimeList;
-import com.victorfernandesneto.myanimelistrandomizer.util.*;
+import com.victorfernandesneto.myanimelistrandomizer.model.ApiQuery;
+import com.victorfernandesneto.myanimelistrandomizer.model.Anime;
+import com.victorfernandesneto.myanimelistrandomizer.service.RequestAnimeList;
+import com.victorfernandesneto.myanimelistrandomizer.service.*;
 
 
 import java.io.IOException;

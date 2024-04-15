@@ -1,7 +1,6 @@
-package com.victorfernandesneto.myanimelistrandomizer.request;
+package com.victorfernandesneto.myanimelistrandomizer.service;
 
-import com.victorfernandesneto.myanimelistrandomizer.models.ApiQuery;
-import com.victorfernandesneto.myanimelistrandomizer.util.CallResource;
+import com.victorfernandesneto.myanimelistrandomizer.model.ApiQuery;
 
 import java.io.IOException;
 import java.net.URI;
