@@ -4,87 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="deleted lib folder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/Anime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/models/ApiQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/ApiQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/request/RequestAnimeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/request/RequestAnimeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ExtractNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/util/ParseJson.java" afterDir="false" />
+    <list default="true" id="80a7012a-0eb2-4120-b110-3f7b4897955a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/main/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/Anime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/model/ApiQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/CallResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/ExtractData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/ExtractNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/ParseJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/RandomizeNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/RequestAnimeList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/myanimelistrandomizer/service/ValidateData.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Record" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;victorfernandesneto&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "victorfernandesneto"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/victorfernandesneto/myanimelist-randomizer.git&quot;,
-    &quot;accountId&quot;: &quot;f53b0ea0-4263-40ce-977c-98447abe6836&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/victorfernandesneto/myanimelist-randomizer.git",
+    "accountId": "f53b0ea0-4263-40ce-977c-98447abe6836"
   }
-}</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2evTq3Vi9kDU8sGPafEgFMLB3Co" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2fQFAgHEoebTvWR96bZGY13Ur01" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/victor/IdeaProjects/anime-randomizer",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="envFilePaths">
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-      </option>
-      <option name="MAIN_CLASS_NAME" value="com.victorfernandesneto.myanimelistrandomizer.main.App" />
-      <module name="anime-randomizer" />
+    <configuration name="MalRandomizerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.victorfernandesneto.malrandomizer.MalRandomizerApplication" />
+      <module name="mal-randomizer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.victorfernandesneto.myanimelistrandomizer.main.*" />
+          <option name="PATTERN" value="com.victorfernandesneto.malrandomizer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,127 +77,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="anime-randomizer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="anime-randomizer" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.MalRandomizerApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="22f5ef0f-ff5d-4340-91f1-8e7cf497bc4d" name="Changes" comment="" />
-      <created>1712784243566</created>
+      <changelist id="80a7012a-0eb2-4120-b110-3f7b4897955a" name="Changes" comment="" />
+      <created>1713725252847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712784243566</updated>
+      <updated>1713725252847</updated>
     </task>
-    <task id="LOCAL-00001" summary="the code works! (refactored the code, added readme too)">
-      <option name="closed" value="true" />
-      <created>1712958602807</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712958602807</updated>
-    </task>
-    <task id="LOCAL-00002" summary="created class ApiQuery to handle the url">
-      <option name="closed" value="true" />
-      <created>1712995562234</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1712995562234</updated>
-    </task>
-    <task id="LOCAL-00003" summary="refactored apiquery class">
-      <option name="closed" value="true" />
-      <created>1713015950303</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713015950303</updated>
-    </task>
-    <task id="LOCAL-00004" summary="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number">
-      <option name="closed" value="true" />
-      <created>1713101330121</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713101330121</updated>
-    </task>
-    <task id="LOCAL-00005" summary="refactored code to better separate methods in their respective classes">
-      <option name="closed" value="true" />
-      <created>1713103611709</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713103611709</updated>
-    </task>
-    <task id="LOCAL-00006" summary="changed code to handle private profile">
-      <option name="closed" value="true" />
-      <created>1713199327887</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713199327887</updated>
-    </task>
-    <task id="LOCAL-00007" summary="deleted unfiltered sout">
-      <option name="closed" value="true" />
-      <created>1713199529566</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713199529566</updated>
-    </task>
-    <task id="LOCAL-00008" summary="deleted unfiltered sout">
-      <option name="closed" value="true" />
-      <created>1713199615978</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713199615978</updated>
-    </task>
-    <task id="LOCAL-00009" summary="deleted lib folder">
-      <option name="closed" value="true" />
-      <created>1713222737802</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1713222737802</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="the code works! (refactored the code, added readme too)" />
-    <MESSAGE value="created class ApiQuery to handle the url" />
-    <MESSAGE value="refactored apiquery class" />
-    <MESSAGE value="optimized randomizer logic so the code doesn't randomize a number equal or above of an already randomized number" />
-    <MESSAGE value="refactored code to better separate methods in their respective classes" />
-    <MESSAGE value="changed code to handle private profile" />
-    <MESSAGE value="deleted unfiltered sout" />
-    <MESSAGE value="deleted lib folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted lib folder" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
