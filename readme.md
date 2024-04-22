@@ -18,7 +18,7 @@ When live, request by sending get to either `/anime` or `/manga` with the "usern
 
 ### Future improvements
 
-I'll try to debug some exceptions while I study about them a little deeper.
+I'll probably create a feature to only randomize Plan To Watch/Read anime/manga but I'm focusing in dockerize and deploy it to AWS.
 
 
 ### Contact
