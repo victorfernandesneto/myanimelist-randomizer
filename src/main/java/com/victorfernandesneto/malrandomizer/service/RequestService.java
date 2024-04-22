@@ -1,8 +1,9 @@
 package com.victorfernandesneto.malrandomizer.service;
 
 import com.google.gson.Gson;
+import com.victorfernandesneto.malrandomizer.exception.UserNotFoundException;
+import com.victorfernandesneto.malrandomizer.exception.UserPrivateOrEmptyListException;
 import com.victorfernandesneto.malrandomizer.title.TitleDTO;
-import org.apache.coyote.Request;
 
 import java.io.IOException;
 import java.net.URI;
@@ -16,29 +17,29 @@ import java.util.Random;
 
 public class RequestService {
     private static final String URL_BASE = "https://api.myanimelist.net/v2/users/{username}/animelist?limit=1&offset={offset}";
-    private static int ceil = 1000;
-    private static Gson gson = new Gson();
-    private static boolean validJson = false;
+    private static final Gson gson = new Gson();
 
 
-
-    private static int randomizeNumber(int ceil){
+    private static int randomizeNumber(int ceil) throws UserPrivateOrEmptyListException {
         Random rand = new Random();
-        ceil = rand.nextInt(ceil);
-        return ceil;
+        try {
+            return rand.nextInt(ceil);
+        } catch (IllegalArgumentException e) {
+            throw new UserPrivateOrEmptyListException("User profile is either private or the user's list is empty.");
+        }
     }
 
-    private static String createApiQuery(boolean isAnime, String username, int ceil){
-        int randomNumber = randomizeNumber(ceil);
+    private static String createApiQuery(boolean isAnime, String username, int randomNumber) {
         String url = URL_BASE.replace("{username}", username).replace("{offset}", String.valueOf(randomNumber));
-        if(!isAnime){
+        if (!isAnime) {
             url = url.replace("/animelist", "/mangalist");
         }
         return url;
     }
 
-    public static TitleDTO getRandomAnime(String username, String clientId) throws IOException, InterruptedException {
-        String apiURL = RequestService.createApiQuery(true, username, ceil);
+    public static TitleDTO getRandomAnime(String username, String clientId, int ceil) throws IOException, InterruptedException, UserPrivateOrEmptyListException, UserNotFoundException {
+        int randomNumber = randomizeNumber(ceil);
+        String apiURL = RequestService.createApiQuery(true, username, randomNumber);
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
@@ -48,15 +49,16 @@ public class RequestService {
 
         String response = client.send(request, HttpResponse.BodyHandlers.ofString()).body();
         List<Map<String, Object>> dataList = extractResponse(response);
-        if(validateResponse(dataList)){
+        if (validateResponse(dataList)) {
             return formatJson(dataList);
-        } else{
-            return RequestService.getRandomAnime(username, clientId);
+        } else {
+            return RequestService.getRandomAnime(username, clientId, randomNumber); // now randomNumber becomes the new "ceil"
         }
     }
 
-    public static TitleDTO getRandomManga(String username, String clientId) throws IOException, InterruptedException {
-        String apiURL = RequestService.createApiQuery(false, username, ceil);
+    public static TitleDTO getRandomManga(String username, String clientId, int ceil) throws IOException, InterruptedException, UserPrivateOrEmptyListException, UserNotFoundException {
+        int randomNumber = randomizeNumber(ceil);
+        String apiURL = RequestService.createApiQuery(false, username, randomNumber);
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
@@ -66,24 +68,28 @@ public class RequestService {
 
         String response = client.send(request, HttpResponse.BodyHandlers.ofString()).body();
         List<Map<String, Object>> dataList = extractResponse(response);
-        if(validateResponse(dataList)){
+        if (validateResponse(dataList)) {
             return formatJson(dataList);
-        } else{
-            return RequestService.getRandomManga(username, clientId);
+        } else {
+            return RequestService.getRandomManga(username, clientId, randomNumber);
         }
     }
 
-    public static List<Map<String, Object>> extractResponse(String body){
+    public static List<Map<String, Object>> extractResponse(String body) {
         Map<String, Object> responseMap = gson.fromJson(body, Map.class);
         List<Map<String, Object>> dataList = (List<Map<String, Object>>) responseMap.get("data");
         return dataList;
     }
 
-    public static boolean validateResponse(List<Map<String, Object>> dataList){
-        return !dataList.isEmpty();
+    public static boolean validateResponse(List<Map<String, Object>> dataList) throws UserNotFoundException {
+        try {
+            return !dataList.isEmpty();
+        } catch (NullPointerException e) {
+            throw new UserNotFoundException("User not found.");
+        }
     }
 
-    public static TitleDTO formatJson(List<Map<String, Object>> response){
+    public static TitleDTO formatJson(List<Map<String, Object>> response) {
         Map<String, Object> animeMap = response.get(0);
 
         Map<String, Object> node = (Map<String, Object>) animeMap.get("node");
