@@ -1,5 +1,14 @@
 # MyAnimeList Randomizer
 
+### Technologies
+
+<p>
+    <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Spring-3.2.5-green?style=for-the-badge&logo=spring&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker&logoColor=white"/>
+    <img src="https://img.shields.io/badge/AWS-yellow?style=for-the-badge&logo=amazonaws&logoColor=black"/>
+</p>
+
 ### How to run:
 
 - Have a Client ID (register one at MAL website);
@@ -14,9 +23,17 @@ When live, request by sending get to either `/anime` or `/manga` with the "usern
 
 ### Future improvements
 
-I deployed the app in AWS but the only CORS Allowed is the localhost. If any front-end developers want to work with a cool interface, hmu.
+- [x] I want to add filters to watching, watched, dropped, plan to watch so the user can have a more complete experience. (didn't)
 
-Going to post a video soon (in Portuguese, maybe I'll sub in English) explaining the architecture and motivation.
+- [x] I'm planning on "upgrading" this project to a Spring Web service. (did it)
+
+- [x] I'll try to debug some exceptions while I study about them a little deeper.
+
+- [x] I'll probably create a feature to only randomize Plan To Watch/Read anime/manga but I'm focusing in dockerize and deploy it to AWS.
+
+- [x] Deployed the app in AWS (the only CORS Allowed is the localhost).
+
+- [ ] Post a video (in Portuguese, maybe I'll sub in English) explaining the architecture and motivation.
 
 
 ### Contact
