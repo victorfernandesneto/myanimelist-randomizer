@@ -1,9 +1,8 @@
-package com.victorfernandesneto.malrandomizer.service;
+package com.victorfernandesneto.malrandomizer.title;
 
 import com.google.gson.Gson;
 import com.victorfernandesneto.malrandomizer.exception.UserNotFoundException;
 import com.victorfernandesneto.malrandomizer.exception.UserPrivateOrEmptyListException;
-import com.victorfernandesneto.malrandomizer.title.TitleDTO;
 
 import java.io.IOException;
 import java.net.URI;
@@ -15,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class RequestService {
+public class TitleService {
     private static final String URL_BASE = "https://api.myanimelist.net/v2/users/{username}/animelist?limit=1&offset={offset}";
     private static final Gson gson = new Gson();
 
@@ -39,7 +38,7 @@ public class RequestService {
 
     public static TitleDTO getRandomAnime(String username, String clientId, int ceil) throws IOException, InterruptedException, UserPrivateOrEmptyListException, UserNotFoundException {
         int randomNumber = randomizeNumber(ceil);
-        String apiURL = RequestService.createApiQuery(true, username, randomNumber);
+        String apiURL = TitleService.createApiQuery(true, username, randomNumber);
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
@@ -52,13 +51,13 @@ public class RequestService {
         if (validateResponse(dataList)) {
             return formatJson(dataList);
         } else {
-            return RequestService.getRandomAnime(username, clientId, randomNumber); // now randomNumber becomes the new "ceil"
+            return TitleService.getRandomAnime(username, clientId, randomNumber); // now randomNumber becomes the new "ceil"
         }
     }
 
     public static TitleDTO getRandomManga(String username, String clientId, int ceil) throws IOException, InterruptedException, UserPrivateOrEmptyListException, UserNotFoundException {
         int randomNumber = randomizeNumber(ceil);
-        String apiURL = RequestService.createApiQuery(false, username, randomNumber);
+        String apiURL = TitleService.createApiQuery(false, username, randomNumber);
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
@@ -71,7 +70,7 @@ public class RequestService {
         if (validateResponse(dataList)) {
             return formatJson(dataList);
         } else {
-            return RequestService.getRandomManga(username, clientId, randomNumber);
+            return TitleService.getRandomManga(username, clientId, randomNumber);
         }
     }
 

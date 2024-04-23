@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80a7012a-0eb2-4120-b110-3f7b4897955a" name="Changes" comment="deleted lib folder">
+    <list default="true" id="80a7012a-0eb2-4120-b110-3f7b4897955a" name="Changes" comment="added cors configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/malrandomizer/service/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/malrandomizer/title/TitleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/malrandomizer/title/TitleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorfernandesneto/malrandomizer/title/TitleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713726712076</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added cors configuration">
+      <option name="closed" value="true" />
+      <created>1713878358022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713878358023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +132,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deleted lib folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted lib folder" />
+    <MESSAGE value="added cors configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cors configuration" />
   </component>
 </project>
