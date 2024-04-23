@@ -85,8 +85,6 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
-*.properties
-
 ### Maven ###
 target/
 pom.xml.tag

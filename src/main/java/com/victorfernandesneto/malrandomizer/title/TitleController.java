@@ -4,8 +4,8 @@ import com.victorfernandesneto.malrandomizer.exception.UserNotFoundException;
 import com.victorfernandesneto.malrandomizer.exception.UserPrivateOrEmptyListException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
@@ -17,6 +17,7 @@ public class TitleController {
 
     @GetMapping("/anime")
     public TitleDTO getRandomAnime(@RequestHeader(value = "username", required = true) String username) throws IOException, InterruptedException, UserPrivateOrEmptyListException, UserNotFoundException {
+        System.out.println(clientId);
         return TitleService.getRandomAnime(username, clientId, 1000);
     }
 

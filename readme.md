@@ -4,11 +4,7 @@
 
 - Have a Client ID (register one at MAL website);
 - Download the .zip;
-- Create a folder inside `src/main` called `resources` that should contain the file `application.properties` with: 
-
-```
-client.id=YOUR_CLIENT_ID
-```
+- Set your environment variable CLIENT_ID to your client ID. `export CLIENT_ID="YOUR_CLIENT ID"` (for Linux)
 
 - Run `src/main/java/com/victorfernandesneto/malrandomizer/MalRandomizerApplication.java`.
 
@@ -18,7 +14,9 @@ When live, request by sending get to either `/anime` or `/manga` with the "usern
 
 ### Future improvements
 
-I'll probably create a feature to only randomize Plan To Watch/Read anime/manga but I'm focusing in dockerize and deploy it to AWS.
+I deployed the app in AWS but the only CORS Allowed is the localhost. If any front-end developers want to work with a cool interface, hmu.
+
+Going to post a video soon (in Portuguese, maybe I'll sub in English) explaining the architecture and motivation.
 
 
 ### Contact
