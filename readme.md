@@ -33,7 +33,7 @@ When live, request by sending get to either `/anime` or `/manga` with the "usern
 
 - [x] Deployed the app in AWS (the only CORS Allowed is the localhost).
 
-- [ ] Post a video (in Portuguese, maybe I'll sub in English) explaining the architecture and motivation.
+- [x] Post a [video](https://www.youtube.com/watch?v=pcZgI7ckof0) (in Portuguese, maybe I'll sub in English) explaining the architecture and motivation.
 
 
 ### Contact
